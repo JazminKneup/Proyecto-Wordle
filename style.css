@@ -1,10 +1,17 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url(La\ Cuadra\ Universitaria.jpg);
+  background-position: center;
+    background-attachment: fixed;
+  background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
+  color: #fefefe;
 }
 
 #guess-input {
@@ -15,35 +22,52 @@ h1 {
   width: 250px;
   border: 1px solid #ccc;
 }
-
+   
 #guess-button {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #0CBABA;
+  background-color: #730bb0;
   color: #fff;
   border: none;
   border-radius: 3px;
 }
-
 button:active {
     transform: scale(0.95);
 }
-
+ 
+#guess-button:disabled {
+  background-color: #3d3a3a;
+}
+   
 .letter {
-    border: 1px solid black;
-    padding: 3px;
-    margin: 3px;
-    min-width: 20px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
     text-align: center;
-    display: inline-block
+    margin: 2px;
+    font-size: 24px; 
+    line-height: 40px; 
+    border-radius: 4px;
 }
-
+   
 .row{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+   
 .input-area{
     margin: 30px;
+}
+#grid {
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.centered {
+text-align: center;
+}
+.GAMEOVER {
+color: rgb(239, 234, 234); 
+animation: animate__shakeX duration timing-function delay iteration-count direction fill-mode;
 }
