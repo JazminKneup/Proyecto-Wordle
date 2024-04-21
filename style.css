@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
   background-image: url(La\ Cuadra\ Universitaria.jpg);
   background-position: center;
-    background-attachment: fixed;
-  background-size: 100%;
-    background-repeat: no-repeat;
-
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
-  color: #fefefe;
+  color: rgb(11, 242, 46);
+  text-shadow: 
+    -1px -1px 0 #621683,  
+    1px -1px 0 #621683,
+    -1px 1px 0#621683,
+    1px 1px 0#621683;
 }
 
 #guess-input {
@@ -22,7 +31,7 @@ h1 {
   width: 250px;
   border: 1px solid #ccc;
 }
-   
+
 #guess-button {
   display: block;
   margin: 0 auto;
@@ -33,41 +42,50 @@ h1 {
   border: none;
   border-radius: 3px;
 }
+
 button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
- 
+
+#mi-imagen {
+  background-image: url(mario.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #guess-button:disabled {
   background-color: #3d3a3a;
 }
-   
+
 .letter {
-    display: inline-block;
-    width: 40px; 
-    height: 40px; 
-    text-align: center;
-    margin: 2px;
-    font-size: 24px; 
-    line-height: 40px; 
-    border-radius: 4px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 2px;
+  font-size: 24px;
+  line-height: 40px;
+  border-radius: 4px;
 }
-   
-.row{
-    margin-bottom: 20px;
+
+.row {
+  margin-bottom: 20px;
 }
-   
-.input-area{
-    margin: 30px;
+
+.input-area {
+  margin: 30px;
 }
+
 #grid {
-  margin: 0 auto; 
-  text-align: center; 
+  margin: 0 auto;
+  text-align: center;
 }
 
 .centered {
-text-align: center;
+  text-align: center;
 }
+
 .GAMEOVER {
-color: rgb(239, 234, 234); 
-animation: animate__shakeX duration timing-function delay iteration-count direction fill-mode;
+  color: rgb(239, 234, 234);
 }
